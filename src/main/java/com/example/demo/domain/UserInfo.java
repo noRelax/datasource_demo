@@ -1,33 +1,24 @@
 package com.example.demo.domain;
 
-import org.springframework.stereotype.Component;
+import lombok.Data;
 
+import java.util.Date;
+
+@Data
 public class UserInfo {
-    private Integer id;
-    private String userId;
-    private String name;
+    private Long id;
+    //热搜词
+    private String content;
+    //排序号
+    private Long sortNumber;
+    //热搜词状态（0：正常，1：删除）
+    private Integer deleted;
 
-    public Integer getId() {
-        return id;
-    }
+    private Long createdBy;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    private Date createdAt;
+    //更新人
+    private Long updatedBy;
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private Date updatedAt;
 }

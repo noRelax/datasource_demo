@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 
 @Aspect
 //优先级设置到最高
-@Order(Ordered.HIGHEST_PRECEDENCE)
+//@Order(Ordered.HIGHEST_PRECEDENCE)
 @Component
 @Slf4j
 public class DataSourceAspect {

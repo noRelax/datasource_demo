@@ -27,6 +27,7 @@ class DatasourceDemoApplicationTests {
     void contextLoads() {
         List<DeptInfo> deptInfos = hisService.list();
         List<UserInfo> userInfos = userInfoService.list();
+        System.out.println(deptInfos);
         System.out.println(userInfos);
     }
 

@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableAspectJAutoProxy
 @MapperScan("com.example.demo.dao")
-@ComponentScan({"com.example.demo.service","com.example.demo.his","com.example.demo.annotation","com.example.demo.config"})
+@ComponentScan({"com.example.demo.*"})
 public class DatasourceDemoApplication {
 
     public static void main(String[] args) {

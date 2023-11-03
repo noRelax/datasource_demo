@@ -6,6 +6,6 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 public interface HisDeptInfoMapper {
-    @Select("select * from dept_info")
+    @Select("select * from hot_word")
     List<DeptInfo> listDept();
 }

@@ -9,6 +9,6 @@ import java.util.List;
 
 @Mapper
 public interface UserInfoMapper {
-    @Select("select * from user_info where status=1")
+    @Select("select * from hot_word")
     List<UserInfo> selectList();
 }
